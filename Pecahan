@@ -1,0 +1,54 @@
+package Quiz3;
+
+import java.util.*;
+
+class Pecah {
+    int pembilang, penyebut;
+     
+}
+
+class Main {
+
+    public static void main(String[] args) {
+        int pb = 0,py=0;
+        
+        Pecah pecah = new Pecah();
+        pecah.pembilang=pb;
+        pecah.penyebut=py;
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("pembilang : ");
+        pb=input.nextInt();
+        System.out.print("penyebut  : ");
+        py=input.nextInt();
+        
+        if (pb==1){
+            System.out.println("Pecahan awal                    : "+pb +"/"+py);
+            System.out.println("Pecahan paling sederhana        : "+pb +"/"+py);
+        }
+        else if (pb%2==0 && py%2!=0){
+            System.out.println("Pecahan awal                    : "+pb +"/"+py);
+            System.out.println("Pecahan paling sederhana        : "+pb +"/"+py);
+        }
+        else if(py%pb==0){
+            System.out.println("Pecahan awal                    : "+pb +"/"+py);
+            System.out.println("Pecahan paling sederhana        : "+pb/pb +"/"+py/py);
+        }
+        else if (pb%2!=0){
+            if(py%2!=0){
+                System.out.println("Pecahan awal                    : "+pb +"/"+py);
+                System.out.println("Pecahan paling sederhana        : "+pb +"/"+py);
+            }
+            else{
+                System.out.println("Pecahan awal                    : "+pb +"/"+py);
+                System.out.println("Pecahan paling sederhana        : "+pb +"/"+py);
+            }
+        }
+        else if (pb>py){
+            System.out.println("Pecahan awal                    : "+pb +"/"+py);
+            System.out.println("Pecahan paling sederhana        : "+pb/py);
+        }
+        
+    }
+    
+}
